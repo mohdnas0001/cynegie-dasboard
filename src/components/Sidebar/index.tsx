@@ -19,7 +19,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
   return (
     <ClickOutside onClick={() => setSidebarOpen(false)}>
       <aside
-        className={`fixed left-0 top-0 z-9999 flex h-screen w-80 xl:w-72  flex-col bg-white duration-300 ease-linear dark:bg-boxdark lg:translate-x-0 ${
+        className={`fixed left-0 top-0 z-9999 flex h-screen w-80 xl:w-72 lg:w-[300px] flex-col bg-white duration-300 ease-linear dark:bg-boxdark lg:translate-x-0 ${
           sidebarOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
@@ -126,19 +126,14 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
             <span className="block text-sm">alison.e@rayna.ui</span>
           </span>
           <button
-            className="ml-auto p-2 focus:outline-none"
+            className="ml-auto  p-2 focus:outline-none"
             onClick={() => console.log("logout button click")}
           >
-            <svg
-              width="21"
-              height="20"
-              viewBox="0 0 21 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M6.75002 3.33332C7.21026 3.33332 7.58335 2.96023 7.58335 2.49999C7.58335 2.03975 7.21026 1.66666 6.75002 1.66666H5.50002C3.65907 1.66666 2.16669 3.15904 2.16669 4.99999V15C2.16669 16.8409 3.65907 18.3333 5.50002 18.3333H6.75002C7.21026 18.3333 7.58335 17.9602 7.58335 17.5C7.58335 17.0398 7.21026 16.6667 6.75002 16.6667H5.50002C4.57953 16.6667 3.83335 15.9205 3.83335 15V4.99999C3.83335 4.0795 4.57953 3.33332 5.50002 3.33332H6.75002Z"
-              />
-            </svg>
+          <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.75002 3.33332C7.21026 3.33332 7.58335 2.96023 7.58335 2.49999C7.58335 2.03975 7.21026 1.66666 6.75002 1.66666H5.50002C3.65907 1.66666 2.16669 3.15904 2.16669 4.99999V15C2.16669 16.8409 3.65907 18.3333 5.50002 18.3333H6.75002C7.21026 18.3333 7.58335 17.9602 7.58335 17.5C7.58335 17.0398 7.21026 16.6667 6.75002 16.6667H5.50002C4.57955 16.6667 3.83335 15.9205 3.83335 15L3.83335 4.99999C3.83335 4.07952 4.57955 3.33332 5.50002 3.33332H6.75002Z" fill="black"/>
+<path d="M19.4226 10.5892C19.748 10.2638 19.748 9.73617 19.4226 9.41073L16.0893 6.0774C15.7638 5.75196 15.2362 5.75196 14.9108 6.0774C14.5853 6.40284 14.5853 6.93048 14.9108 7.25591L16.8215 9.16666L7.16669 9.16666C6.70645 9.16666 6.33335 9.53975 6.33335 9.99999C6.33335 10.4602 6.70645 10.8333 7.16669 10.8333L16.8215 10.8333L14.9108 12.7441C14.5853 13.0695 14.5853 13.5971 14.9108 13.9226C15.2362 14.248 15.7638 14.248 16.0893 13.9226L19.4226 10.5892Z" fill="black"/>
+</svg>
+
           </button>
         </div>
       </aside>
