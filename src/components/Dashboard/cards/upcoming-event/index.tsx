@@ -7,14 +7,14 @@ const UpcomingEvent = () => {
   return (
     <div className="flex flex-col md:flex-row bg-white rounded-lg md:space-x-2 mt-8">
       {/* Calendar Section */}
-      <div className="w-full  md:w-1/2  flex justify-center md:justify-start">
+      <div className="w-full   md:w-1/2  flex justify-center md:justify-start">
         <Calendar />
       </div>
 
       {/* Event Details Section */}
-      <div className="flex flex-col w-full md:w-1/2 justify-center mt-6 md:mt-0 md:pl-6 md:border-l-2 md:border-gray-200">
+      <div className="flex mb-4 flex-col w-full md:w-1/2 justify-center mt-6 md:mt-0 md:pl-6 md:border-l-2 md:border-gray-200">
   {/* User Info Section */}
-  <div className="flex items-center space-x-4">
+  <div className="flex items-center mb-2 space-x-4">
     <Image
       src="/images/user/user-01.png"
       alt="David"
@@ -34,7 +34,7 @@ const UpcomingEvent = () => {
   </div>
 
   {/* Description Section */}
-  <p className="my-4 font-medium text-gray-700 text-sm md:text-base xl:text-sm">
+  <p className="my-2 font-medium text-gray-700 text-sm md:text-base xl:text-sm">
     This is the final deadline for submitting all deliverables for the Figma
     asset. Please ensure that all tasks are completed.
   </p>

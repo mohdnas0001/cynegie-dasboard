@@ -18,10 +18,10 @@ const Profile: React.FC = () => {
 
           {/* User Info */}
           <span className="text-center">
-            <span className="block mb-1 sm:mb-2 text-lg sm:text-xl lg:text-2xl font-semibold text-black">
+            <span className="block mb-[1px] sm:mb-2 text-lg sm:text-lg lg:text-lg font-semibold text-black">
               Wumi Adeola
             </span>
-            <span className="block font-normal text-sm sm:text-base lg:text-lg">
+            <span className="block font-normal text-sm sm:text-base lg:text-base">
               Product Designer
             </span>
           </span>
