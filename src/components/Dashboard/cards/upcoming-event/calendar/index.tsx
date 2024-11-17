@@ -19,7 +19,7 @@ const Calendar = () => {
 
   return (
     <LocalizationProvider dateAdapter={AdapterDateFns}>
-      <Box display="flex" flexDirection="column" alignItems="center" className="w-72">
+<Box display="flex" className="w-55 sm:w-60 items-center justify-center md:w-72">
         {/* StaticDatePicker without renderInput prop */}
         <StaticDatePicker
           displayStaticWrapperAs="desktop"

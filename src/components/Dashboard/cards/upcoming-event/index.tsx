@@ -8,7 +8,7 @@ const UpcomingEvent = () => {
   return (
     <div className="flex flex-col md:flex-row bg-white rounded-lg p-4 space-x-0 md:space-x-6 mt-8">
       {/* Calendar Section */}
-      <div className="w-64 md:mr-4">
+      <div className="w-full items-center justify-center flex md:mr-4">
         <Calendar />
       </div>
 
