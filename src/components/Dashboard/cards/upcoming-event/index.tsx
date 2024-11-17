@@ -12,7 +12,7 @@ const UpcomingEvent = () => {
       </div>
 
       {/* Event Details Section */}
-      <div className="flex flex-col w-full md:w-1/2 justify-center mt-6 md:mt-0 md:pl-2 md:border-l-2 md:border-gray-200">
+      <div className="flex flex-col w-full md:w-1/2 justify-center mt-6 md:mt-0 md:pl-6 md:border-l-2 md:border-gray-200">
   {/* User Info Section */}
   <div className="flex items-center space-x-4">
     <Image

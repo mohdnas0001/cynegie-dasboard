@@ -24,6 +24,7 @@ const Calendar = () => {
             displayStaticWrapperAs="desktop"
             value={selectedDate}
             onChange={(newDate) => setSelectedDate(newDate)}
+            
             sx={{
               ".MuiCalendarPicker-root": {
                 width: "100%",
