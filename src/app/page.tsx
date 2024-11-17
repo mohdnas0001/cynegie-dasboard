@@ -1,19 +1,7 @@
-import { Metadata } from "next";
-import DefaultLayout from "@/components/Layouts/DefaultLayout";
-import HomePage from "@/components/Dashboard";
-
-export const metadata: Metadata = {
-  title:
-    "Cynegie || Dashboard",
-  description: "This is Next.js Home Page for Cynegie Dashboard",
-};
+// app/page.tsx or pages/index.tsx (for older Next.js versions)
+import { redirect } from "next/navigation";
 
 export default function Home() {
-  return (
-    <>
-      <DefaultLayout>
-        < HomePage/>
-      </DefaultLayout>
-    </>
-  );
+  // Redirect from the home page to the /dashboard route
+  redirect("/dashboard");
 }

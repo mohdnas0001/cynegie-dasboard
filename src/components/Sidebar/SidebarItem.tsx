@@ -12,7 +12,7 @@ const SidebarItem = ({ item, pageName, setPageName }: any) => {
   const pathname = usePathname();
 
   const isActive = (item: any) => {
-    if (item.route === pathname) return true;
+    if (item.route === pathname ) return true;
     
   };
 
@@ -24,7 +24,7 @@ const SidebarItem = ({ item, pageName, setPageName }: any) => {
         <Link
           href={item.route}
           onClick={handleClick}
-          className={`${isItemActive ? "bg-primary500" : ""} group relative flex items-center gap-4 rounded-sm px-2 py-2 font-medium text-black duration-300 ease-in-out hover:bg-primary500  hover:text-white`}
+          className={`${isItemActive ? "bg-primary500 text-white" : ""} group relative flex items-center gap-4 rounded-sm px-2 py-2 font-medium text-black duration-300 ease-in-out hover:bg-primary500  hover:text-white`}
         >
           {item.icon}
           {item.label}
