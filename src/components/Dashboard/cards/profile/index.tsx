@@ -3,10 +3,10 @@ import Image from 'next/image';
 const Profile: React.FC = () => {
   return (
     <>
-      <div className="p-6 ">
+      <div className="p-4 sm:p-6">
         <div className="flex mt-2 items-center flex-col gap-4">
           {/* Circle wrapper around image */}
-          <span className="h-40 w-40 rounded-full border-4 border-primary500 flex items-center justify-center">
+          <span className="h-24 w-24 sm:h-32 sm:w-32 lg:h-40 lg:w-40 rounded-full border-2 sm:border-4 border-primary500 flex items-center justify-center">
             <Image
               width={312}
               height={112}
@@ -18,13 +18,13 @@ const Profile: React.FC = () => {
 
           {/* User Info */}
           <span className="text-center">
-            <span className="block mb-2 text-xl font-semibold text-black">
+            <span className="block mb-1 sm:mb-2 text-lg sm:text-xl lg:text-2xl font-semibold text-black">
               Wumi Adeola
             </span>
-            <span className="block font-normal text-base">Product Designer</span>
+            <span className="block font-normal text-sm sm:text-base lg:text-lg">
+              Product Designer
+            </span>
           </span>
-
-       
         </div>
       </div>
     </>

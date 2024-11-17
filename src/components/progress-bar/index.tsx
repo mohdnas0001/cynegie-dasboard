@@ -8,7 +8,7 @@ const HalfCircleProgressBar: React.FC = () => {
   const progressLength = (progress / 60) * circumference; // Length of the progress arc
 
   return (
-    <div className="relative w-48 h-24">
+    <div className="relative w-36 h-20 md:w-48 md:h-24 lg:w-60 lg:h-30">
       <svg
         className="absolute transform -rotate-270"
         width="100%"
@@ -30,16 +30,19 @@ const HalfCircleProgressBar: React.FC = () => {
           cx="60"
           cy="60"
           r={radius}
-          stroke="#0035C3" // Green color for the progress
+          stroke="#0035C3" // Blue color for the progress
           strokeWidth={strokeWidth}
           fill="none"
           strokeDasharray={circumference} // Full circumference
           strokeDashoffset={circumference - progressLength} // Offset based on progress
         />
       </svg>
-      <div className="absolute inset-0 mt-4 flex flex-col items-center justify-center text-xl font-bold" style={{ transform: 'translateY(8px)' }}>
-        <div className='text-base font-bold'>{progress}</div>
-        <div className='text-sm'>OUT OF 60</div>
+      <div
+        className="absolute inset-0 mt-2 md:mt-4 lg:mt-6 flex flex-col items-center justify-center text-sm md:text-xl lg:text-2xl font-bold"
+        style={{ transform: 'translateY(8px)' }}
+      >
+        <div className="text-xs md:text-base lg:text-lg font-bold">{progress}</div>
+        <div className="text-xs md:text-sm lg:text-base">OUT OF 60</div>
       </div>
     </div>
   );

@@ -18,7 +18,7 @@ const TimeOff: React.FC = () => {
 
     return (
       <>
-    <div className="flex items-center justify-center mb-6 md:p-6">
+    <div className="flex items-center justify-center mb-6 md:p-6 xl:p-0">
           {/* <DayMeter currentDay={currentDay} totalDays={totalDays} /> */}
                 <HalfCircleProgressBar  />
 

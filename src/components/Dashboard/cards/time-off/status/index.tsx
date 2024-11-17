@@ -44,20 +44,20 @@ const StatusItem: React.FC<StatusItemProps> = ({ date, status, statusColor }) =>
   }[statusColor];
 
   return (
-    <div className="flex items-center justify-between gap-1 p-2  border-gray-200">
+    <div className="flex items-center justify-between gap-1 md:p-2 xl:p-0 xl:mb-2  border-gray-200">
       {/* Circle/Tick Dot */}
       <div className="flex gap-4 items-center">
         <div className={`w-3.5 h-3.5 rounded-full ${circleColorClass}`}></div>
 
       {/* Date and Status Text */}
-      <span className="text-sm m font-semibold text-gray-700">{date} </span>
+      <span className="md:text-sm text-xs xl:text-xs  font-semibold text-gray-700">{date} </span>
       </div>
       
 
       {/* Status Button */}
       <button
         style={buttonStyles}
-        className="px-2 py-1 w-20 rounded-full text-sm font-semibold"
+        className="px-[2px] py-1 w-20 md:text-sm text-xs xl:text-xs rounded-full  font-medium"
       >
         {status}
       </button>
